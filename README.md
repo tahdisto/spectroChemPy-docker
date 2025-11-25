@@ -17,7 +17,7 @@ This repository contains a Dockerized environment for running [SpectroChemPy](ht
 
 ### Prerequisites
 
-- Install Docker Desktop on your machine: https://www.docker.com/products/docker-desktop
+Install Docker Desktop on your machine: https://www.docker.com/products/docker-desktop
 
 ### Build Docker Image
 
@@ -33,11 +33,11 @@ Start the container and map port 8888 for JupyterLab access:
 
 ### Access JupyterLab
 
-- After container startup, note the JupyterLab URL with token printed in the console, e.g.:
+After container startup, note the JupyterLab URL with token printed in the console, e.g.:
 
 http://127.0.0.1:8888/lab?token=12345678901234567890
 
-- Open this URL in your browser to start working with SpectroChemPy interactively.
+Open this URL in your browser to start working with SpectroChemPy interactively.
 
 ### (Optional) Mount Local Directory
 
@@ -71,8 +71,8 @@ ex1
 
 ## Troubleshooting
 
-- If you encounter missing package errors during build related to system libraries, consider updating the Dockerfile to replace deprecated packages like `libatlas-base-dev` with alternatives such as `libopenblas-dev`.
-- For JupyterLab startup errors, ensure the command in Dockerfile uses `jupyter lab` instead of `jupyter notebook`.
+If you encounter missing package errors during build related to system libraries, consider updating the Dockerfile to replace deprecated packages like `libatlas-base-dev` with alternatives such as `libopenblas-dev`.
+For JupyterLab startup errors, ensure the command in Dockerfile uses `jupyter lab` instead of `jupyter notebook`.
 
 ---
 
