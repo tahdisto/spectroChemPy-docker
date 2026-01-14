@@ -9,12 +9,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libopenblas-dev \
     gfortran \
     && rm -rf /var/lib/apt/lists/*
-    
+
 
 # Install JupyterLab and SpectroChemPy
 RUN pip install --no-cache-dir \
     jupyterlab \
-    spectrochempy
+    spectrochempy \
+    jupyterlab-logout
 
 # Set the working directory
 WORKDIR /app
