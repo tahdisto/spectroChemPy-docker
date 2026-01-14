@@ -9,6 +9,7 @@ This repository contains a Dockerized environment for running [SpectroChemPy](ht
 - Ready-to-use Docker container with Python 3.11, SpectroChemPy, and JupyterLab pre-installed.
 - Fully isolated environment eliminating dependency and system configuration issues.
 - Access JupyterLab through the browser via port 8888.
+- Includes "Log Off" button for easy session management and re-authorization.
 - Supports loading and analyzing spectroscopic data formats such as OMNIC, JCAMP-DX, CSV, and more inside Jupyter notebooks.
 
 ---
@@ -54,7 +55,7 @@ Replace `/path/to/local/folder` with your actual directory path.
 Import SpectroChemPy and check version:
 
 ```
-import spectrochempy as scp 
+import spectrochempy as scp
 print(scp.version)
 ```
 
